@@ -31,9 +31,9 @@
         }
     },
     "scripts": {
-        "test": [
+        "e2e": [
             "Composer\\Config::disableProcessTimeout",
-            "phpunit"
+            "./bin/run-tests.sh --browser"
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
